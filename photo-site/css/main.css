@@ -1,0 +1,45 @@
+h1 {
+text-align: center;
+font-size: 3.5em;
+font-variant: small-caps;
+padding: .25em;
+}
+
+h2 {
+font-size:.80em;
+font-weight: normal;
+}
+
+#nav ul {
+list-style-type: none;
+text-align: center;
+margin: 0;
+padding: 1.5em;
+text-decoration: none;
+}
+
+#nav ul li {
+display: inline;
+padding: 2em ;
+text-decoration: none;
+}
+
+#navcontainer ul {
+list-style-type: none;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+#navcontainer ul li {
+display: inline;
+padding: .2em ;
+}
+
+  /* --- breakpoints / layout changes wider screens --- */
+
+  @media (min-width: 48em) {
+
+resize {
+width: 32%
+}
