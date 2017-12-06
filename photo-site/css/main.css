@@ -17,6 +17,7 @@ vertical-align: middle;
 
 a {
   text-decoration: none;
+  color: #000;
   }
 
 @font-face {
@@ -58,8 +59,10 @@ margin-bottom: 3em;
 
 #nav li {
 text-decoration: none;
-display: inline;
-padding: 2em ;
+font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+display: inline-block;
+padding: .5em ;
+color: #000;
 
 }
 
@@ -77,6 +80,8 @@ padding: 2em ;
 #unexplained:target .weird,
 #sort:target .photo {
   display: inline-block;
+  text-decoration: none;
+  color: #000;
   }
 
 #photos {
@@ -122,6 +127,7 @@ top:0; left:0;
   #footer {
   text-decoration: none;
   text-align: center;
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
   padding: 3em;
   }
 
