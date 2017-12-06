@@ -1,6 +1,6 @@
 body {
   width: 90%;
-  max-width: 60em;
+  max-width: 80em;
   margin: 0 auto;
   }
 
@@ -26,6 +26,7 @@ a {
          url('../fonts/im-fell-dw/imfepirm28p-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
     font-display: swap;
 
 }
@@ -36,6 +37,7 @@ text-align: center;
 font: normal normal 6em/1.2 im fell dw, 'courier new', serif;
 font-size: 3.5em;
 font-variant: small-caps;
+line-height: .75em;
 padding: 0em;
 margin: 0em;
 }
@@ -44,7 +46,7 @@ h2 {
 font: normal normal 6em/1.2 im fell dw, 'courier new', serif;
 font-size: 1em;
 font-weight: normal;
-text-align: center;
+text-align: left;
 }
 
 #nav ul {
@@ -52,7 +54,7 @@ list-style-type: none;
 text-align: center;
 margin: 0;
 color: #000;
-padding: 1.5em;
+padding: 1.2em;
 margin-bottom: 3em;
 
 }
@@ -100,6 +102,13 @@ vertical-align: middle;
 /* overflow: scroll; */
 }
 
+figcaption {
+font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+font-size: .75em;
+padding: 1em;
+text-align: center;
+}
+
 .front-back {
 display: block;
 position:relative;
@@ -135,6 +144,10 @@ top:0; left:0;
 
 @media (min-width: 48em) {
 
+h2 {
+text-align: center;
+}
+
 #photos li {
   display: inline;
   margin: 0 .75em;
@@ -161,3 +174,4 @@ top:0; left:0;
   }
 
 }
+
