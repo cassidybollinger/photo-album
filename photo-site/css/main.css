@@ -1,0 +1,237 @@
+body {
+  width: 90%;
+  max-width: 60em;
+  margin: 0 auto;
+  }
+
+figure {
+margin: 0;
+}
+
+img {
+width:auto;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  }
+
+@font-face {
+    font-family: IM Fell DW;
+    src: url('../fonts/im-fell-dw/imfepirm28p-webfont.woff2') format('woff2'),
+         url('../fonts/im-fell-dw/imfepirm28p-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+#banner {
+  padding-top: 5%;
+  }
+
+h1 {
+  text-align: center;
+  font: normal normal 5.5em/1.2 im fell dw, 'courier new', serif;
+  font-size: 3.5em;
+  font-variant: small-caps;
+  line-height: .75em;
+  padding: 0em;
+  margin-top:3%;
+  margin: 0 0 5%;
+}
+
+h2 {
+font: normal normal 6em/1.2 im fell dw, 'courier new', serif;
+font-size: 1em;
+font-weight: normal;
+text-align: left;
+}
+
+h3 {
+font: normal normal 6em/1.2 im fell dw, 'courier new', serif;
+font-size: 2em;
+font-variant: small-caps;
+font-weight: normal;
+text-align: center;
+}
+
+#nav ul {
+  list-style-type: none;
+  text-align: center;
+  /* margin: 0 0 0 2%; */
+  color: #000;
+  padding-left: 0;
+  padding-top: 1em;
+}
+
+#nav li {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav a {
+  text-decoration: none;
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+/*   font-variant: small-caps; */
+  margin: .4em;
+}
+
+.target {
+  padding-top: 1em;
+}
+
+:target .photo {
+  display: none;
+  /* visibility: hidden; */
+  }
+
+#dames:target .girl,
+#gentlemen:target .boy,
+#unexplained:target .weird,
+#sort:target .photo {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  /* visibility: visible; */
+  }
+
+.target:target #collection:before {
+    display: block;
+    padding: 0 0 1em;
+
+  }
+
+#dames:target #collection:before {
+  content: "The Dames";
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+  font-size: 2em;
+  font-variant: small-caps;
+  text-align: center;
+  }
+
+#gentlemen:target #collection:before {
+  content: "The Gentlemen";
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+  font-size: 2em;
+  font-variant: small-caps;
+  text-align: center;
+  }
+
+  #unexplained:target #collection:before {
+  content: "The Unexplained";
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+  font-size: 2em;
+  font-variant: small-caps;
+  text-align: center;
+  }
+
+#photos {
+list-style-type: none;
+text-align: center;
+padding: 0;
+margin: 0 auto;
+}
+
+.photo {
+display: inline-block;
+position:relative;
+max-width: 36em;
+text-align: left;
+vertical-align: middle;
+padding-bottom: 1em;
+margin: 0 .75em;
+/* overflow: scroll; */
+}
+
+figcaption {
+font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+font-size: .75em;
+padding: 1em;
+font-variant: small-caps;
+
+text-align: center;
+}
+
+.front-back {
+display: block;
+position:relative;
+}
+
+.front-back .front {
+position: relative;
+z-index:1;
+}
+
+.front-back .back {
+position: absolute;
+top:0; left:0;
+}
+
+.front-back:hover .back {
+  z-index: 1;
+  }
+
+ .front-back:hover .front,
+ .photo:target .front {
+  z-index: 0;
+  }
+
+  #about-text {
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+}
+
+  #footer {
+  text-decoration: none;
+  text-align: center;
+  font: normal normal 1em/1.2 im fell dw, 'courier new', serif;
+  padding: 3em;
+  }
+
+/* --- breakpoints / layout changes wider screens --- */
+
+@media (min-width: 48em) {
+
+h2 {
+text-align: center;
+}
+
+nav ul {
+text-align: center;
+}
+
+nav a {
+display: inline-block;
+text-align: center;
+}
+
+#photos li {
+  display: inline;
+  }
+
+.photo {
+  width: 33%;
+  max-width: none;
+  }
+
+.landscape {
+  width: 66%;
+  position: center;
+  }
+
+@media (min-width: 60em) {
+
+.photo {
+  width: 25%;
+  }
+
+.landscape {
+  width: 49%;
+  }
+
+}
